@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Activities.ClientsActivity"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/clients_radio_actives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <RadioButton
+            android:id="@+id/radioBtn_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/active"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_unactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unactive"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/all"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_active_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/active_m"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_active_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/active_w"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/clients_labelEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_data_to_show"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/clientsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="visible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="units_list">
+            <item>km</item>
+            <item>miles</item>
+        </string-array>
+
+        <integer-array name="units_value">
+            <item>0</item>
+            <item>1</item>
+        </integer-array>
+
+        <string name="units_key">Units</string>
+
+        <string-array name="radios_list">
+            <item>500</item>
+            <item>1000</item>
+            <item>1500</item>
+            <item>2000</item>
+            <item>2500</item>
+        </string-array>
+
+        <string-array name="results_list">
+            <item>5</item>
+            <item>10</item>
+            <item>15</item>
+            <item>20</item>
+            <item>25</item>
+            <item>30</item>
+            <item>35</item>
+            <item>40</item>
+            <item>45</item>
+            <item>50</item>
+        </string-array>
+</resources>

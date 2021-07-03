@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_primary"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:theme="@style/AppTheme"
+    tools:context=".Activities.ClientsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:contentDescription="@string/dont_be_potato"
+        app:srcCompat="@drawable/logo3" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fclients_tabbedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/clients_all_narrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/clients_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detailed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/clients_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_client" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_clients"
+        android:name="com.alma.Fragments.ClientsAllFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_clients_all" />
+
+</LinearLayout>

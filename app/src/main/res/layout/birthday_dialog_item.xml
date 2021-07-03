@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bdi_labelEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/no_birthdays_today"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TableRow
+        android:id="@+id/bdi_layout_send"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/send_to_all"
+            android:textColor="@color/boostGreen"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/bdi_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:padding="2dp"
+            app:srcCompat="@drawable/ic_baseline_send_24" />
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bdi_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_primary"
+    android:padding="5dp"
+    android:theme="@style/AppTheme"
+    tools:context=".Activities.ScheduleActivity">
+
+    <ImageView
+        android:id="@+id/schedule_imagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/dont_be_potato"
+        app:srcCompat="@drawable/logo3" />
+
+    <TableRow
+        android:id="@+id/schedule_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_imagetitle"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:paddingTop="10dp"
+            android:text="@string/selectd_date"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/schedule_dateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/schedule_floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_margin="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ic_baseline_today_24"
+            android:foregroundGravity="center"
+            app:backgroundTint="@color/colorPrimary"
+            android:contentDescription="TODO" />
+
+    </TableRow>
+
+    <CalendarView
+        android:id="@+id/schedule_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_below="@id/schedule_date"
+        android:layout_weight="2"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:selectedDateVerticalBar="@color/colorPrimary"
+        android:theme="@style/AppTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/schedule_calendar"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/schedule_tabbedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/schedule_tabAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/schedualed_workoutss" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/schedule_tabNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_workout_to_selected_date" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_schedule_all" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fbd082</color>
+<!--    <color name="colorPrimaryDark">#bf9b30</color>-->
+    <color name="colorAccent">#a67c00</color>
+    <color name="colorBackground">#ffffba</color>
+
+    <color name="beachRed">#ff6f69</color>
+    <color name="beachRed_t">#50ff6f69</color>
+    <color name="boostRed">#d9534f</color>
+    <color name="boostRed_t">#50d9534f</color>
+    <color name="pastelRed">#ffbdbd</color>
+    <color name="pastelRed_t">#50ffbdbd</color>
+    <color name="holo_blue">#0099CC</color>
+    <color name="holo_blue_t">#500099CC</color>
+    <color name="beachGreen">#96ceb4</color>
+    <color name="beachGreen_t">#5096ceb4</color>
+    <color name="boostGreen">#5cb85c</color>
+    <color name="boostGreen_t">#505cb85c</color>
+    <color name="pastelYellow">#ffffba</color>
+    <color name="pastelYellow_t">#50ffffba</color>
+    <color name="colorYellow">#f3ea5f</color>
+    <color name="colorYellow_t">#50f3ea5f</color>
+    <color name="beachYellow">#ffeead</color>
+    <color name="beachYellow_t">#50ffeead</color>
+    <color name="turkiz">#b3e7fb</color>
+    <color name="turkiz_t">#50B3E7FB</color>
+    <color name="blue">#0063ff</color>
+    <color name="blue_t">#500063ff</color>
+    <color name="colorTurkiz">#2bd1fc</color>
+    <color name="colorTurkiz_t">#1A2BD1FC</color>
+    <color name="pastelPurple">#f1cbff</color>
+    <color name="pastelPurple_t">#50f1cbff</color>
+    <color name="vaporPurple">#b967ff</color>
+    <color name="vaporPurple_t">#50b967ff</color>
+    <color name="pastelPink">#ffb3ba</color>
+    <color name="pastelPink_t">#50ffb3ba</color>
+    <color name="vaporPink">#ff71ce</color>
+    <color name="vaporPink_t">#50ff71ce</color>
+    <color name="melmoOrange">#f9c569</color>
+    <color name="melmoOrange_t">#50f9c569</color>
+    <color name="melmoOrange2">#f68314</color>
+    <color name="melmoOrange2_t">#50f68314</color>
+    <color name="greenLogo">#52bf90</color>
+    <color name="greenLogo_t">#5052bf90</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_t">#50FFFFFF</color>
+    <color name="colorYellowStrong">#FFE500</color>
+
+
+    <!--    <color name="pastelPeach">#ffdfba</color>-->
+<!--    <color name="pastelGreen">#baffc9</color>-->
+<!--    <color name="pastelBlue">#bae1ff</color>-->
+<!--    <color name="pastelGreen2">#e1f7d5</color>-->
+<!--    <color name="pastelBlue2">#c9c9ff</color>-->
+<!--    <color name="beachOrange">#ffcc5c</color>-->
+<!--    <color name="beachGreen2">#88d8b0</color>-->
+<!--    <color name="boostBlue">#5bc0de</color>-->
+<!--    <color name="boostBlue2">#428bca</color>-->
+<!--    <color name="greenLogo2">#317256</color>-->
+<!--    <color name="colorPink">#ff48c4</color>-->
+<!--    <color name="colorPurple">#c04df9</color>-->
+<!--    <color name="colorRed">#ff3f3f</color>-->
+</resources>

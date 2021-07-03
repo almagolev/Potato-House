@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ci_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@drawable/clear_btn"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ci_layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/ci_label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:visibility="visible" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="3dp"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/ci_label_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center|right"
+                android:text="id: 123456789"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ci_btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                android:gravity="right"
+                app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/ci_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_timeline_24" />
+
+            <TextView
+                android:id="@+id/ci_label_since"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/since"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/ci_label_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="bottom|right"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </TableRow>
+
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/ci_layout_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_title_24" />
+
+            <EditText
+                android:id="@+id/ci_txt_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/first_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_title_24" />
+
+            <EditText
+                android:id="@+id/ci_txt_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/last_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <EditText
+                android:id="@+id/ci_txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/home_address"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_local_phone_24" />
+
+            <EditText
+                android:id="@+id/ci_txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/phone_number"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_alternate_email_24" />
+
+            <EditText
+                android:id="@+id/ci_txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/email_address"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_cake_24" />
+
+            <EditText
+                android:id="@+id/ci_label_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/birthdate"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+            <EditText
+                android:id="@+id/ci_label_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/birthdate"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+            <EditText
+                android:id="@+id/ci_label_canceled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/birthdate"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+            <EditText
+                android:id="@+id/ci_label_w_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/birthdate"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/ci_toggleBtnActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:textOff="Un Active"
+                android:textOn="Active" />
+
+            <ToggleButton
+                android:id="@+id/ci_toggleBtnGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:textOff="MALE"
+                android:textOn="FEMALE" />
+
+            <ToggleButton
+                android:id="@+id/ci_toggleBtnHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:enabled="false"
+                android:textOff="No health"
+                android:textOn="has health" />
+
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:padding="2dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ci_btnEdit"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:text="@string/edit"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/ci_btnSave"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:text="@string/save"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/ci_btnCancel"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:text="@string/cancel"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerRepeatItems">
+        <item>DONT REPEAT</item>
+        <item>EVERY DAY</item>
+        <item>EVERY OTHER DAY</item>
+        <item>EVERY ODD DAY</item>
+        <item>EVERY EVEN DAY</item>
+        <item>EVERY WEEK</item>
+        <item>EVERY 2 WEEKS</item>
+    </string-array>
+
+    <string-array name="spinnerStudiosItems">
+        <item>STUDIO 1</item>
+        <item>STUDIO 2</item>
+        <item>STUDIO 3</item>
+        <item>STUDIO 4</item>
+        <item>OUTDOOR</item>
+    </string-array>
+
+    <string-array name="spinnerDiffItems">
+        <item>LOW</item>
+        <item>MAX</item>
+        <item>HARD</item>
+        <item>ALL</item>
+    </string-array>
+</resources>

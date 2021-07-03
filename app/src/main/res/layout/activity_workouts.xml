@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_primary"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:theme="@style/AppTheme"
+    tools:context=".Activities.WorkoutsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:contentDescription="@string/dont_be_potato"
+        app:srcCompat="@drawable/logo3" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fw_tabbedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/w_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_workouts" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/w_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_workout" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_workouts"
+        android:name="com.alma.Fragments.WorkoutsAllFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/btn_primary"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:theme="@style/AppTheme"
+    tools:context=".Activities.ActionActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:contentDescription="@string/dont_be_potato"
+        app:srcCompat="@drawable/logo3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/action_tabbedLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_clients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clients" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="workouts" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/action_tabbedLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/action_tab_attend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="attend" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/action_labelEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="NO DATA TO SHOW"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/action_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHighlight">@color/colorYellowStrong</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textColorLink">@color/colorYellowStrong</item>
+        <item name="android:textCursorDrawable">@color/colorYellowStrong</item>
+<!--        <item name="android:calendarViewStyle">@style/Widget.CalendarView.Custom</item>-->
+    </style>
+
+    <style name="CustomFontStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">12pt</item>
+        <item name="android:textColor">#00FF00</item>/>
+    </style>
+
+    <style name="MyToggle" parent="@android:style/Widget.Material.Light.Button.Toggle">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:radius">3dp</item>
+        <item name="icon">@drawable/ic_baseline_person_24</item>
+        <item name="android:bottomOffset">3dp</item>
+        <item name="colorAccent">@color/boostGreen</item>
+        <item name="android:colorControlNormal">@color/beachRed</item>
+        <item name="android:colorControlHighlight">@color/pastelRed</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="Widget.AppCompat.Button" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:soundEffectsEnabled">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
